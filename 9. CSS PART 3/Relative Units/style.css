@@ -1,0 +1,33 @@
+/* 
+Percentages (%)
+-------------------
+It is often used to define a size as relative to an element's parent object.
+
+eg:
+width : 33.33% // relative to the parent (it will take 33.33 percent width from the parent)
+
+margin-left : 50% // relative to the parent size 
+
+*/
+
+
+h1{
+    width: 50%;
+    margin-left: 50%;
+    border: 2px solid black;
+}
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin: 50%; /*it will get parent's 50% margin which will be 400px/2 = 200px (height and width of the parent is 400px)*/
+}
+
+
+

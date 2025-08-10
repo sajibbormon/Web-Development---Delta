@@ -1,0 +1,48 @@
+/* 
+CSS Grid Model
+---------------
+    By default the Grid items indivudually takes one row.(occupy one row)
+
+                        Column lines
+                L1      L2      L3      L4      L5
+                |       |       |       |       |  
+         L1  ---|-------|-------|-------|-------|---
+                |       |       |       |       | 
+                |       |       |       |       | 
+         L2  ---|-------|-------|-------|-------|---
+                |       |       |       |       |        Row Lines
+                |       |       |       |       | 
+         L3  ---|-------|-------|-------|-------|---
+                |       |       |       |       | 
+                |       |       |       |       | 
+         L4  ---|-------|-------|-------|-------|---
+
+
+         - Grid Lines
+         - Grid Cell (individual cell)
+         - Grid Track (Lie(space) between two lines)
+
+
+
+
+
+
+
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+
+}

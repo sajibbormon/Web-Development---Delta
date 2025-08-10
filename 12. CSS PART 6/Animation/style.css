@@ -1,0 +1,111 @@
+/*
+CSS Animations
+--------------
+    To animate CSS elements
+
+        @keyframes myName {
+        from { font-size : 20px; }
+        to { font-size : 40px; }
+
+
+    name could be anything, just like variable name.
+
+    Similar like transition: 
+
+    state              state    
+    -----             -----      
+    | A |   ------>   | B |
+    -----             -----
+
+    from               to
+    initial           final 
+
+
+
+    CSS Animations
+
+        . animation-name
+
+        · animation-duration
+
+        . animation-timing-function
+
+        · animation-delay
+
+        · animation-iteration-count (1, 2, 3, .... infinite)
+
+        · animation-direction (normal, reverse, alternate, etc. )
+
+
+
+    Animation Shorthand
+    --------------------
+        animation: animationName 2s linear 3s infinite normal (animationName, duration, timing-function, delay, count, direction)
+
+
+        
+
+
+    % in Animation
+    --------------
+
+    state              state    
+    -----             -----      
+    | A |   ------>   | B |
+    -----             -----
+
+      0%               100%
+    initial           final 
+
+
+    % in Animation
+
+        @keyframe myName {
+        0% { font-size : 20px; }
+        50% { font-size : 30px; }
+        100% { font-size : 40px; }
+
+
+*/
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: fontAnimation ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 13;
+    animation-direction: alternate;
+
+    /* animation-name: colorAnimate; */
+
+}
+
+@keyframes widthAnimate{
+    from{
+        width: 10px;
+    }
+    to{
+        width: 40px;
+    }
+}
+
+@keyframes fontAnimation{
+    from{ font-size: 20px;}
+    to{
+        font-size: 40px;
+    }
+
+
+}
+
+@keyframes colorAnimate{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+}

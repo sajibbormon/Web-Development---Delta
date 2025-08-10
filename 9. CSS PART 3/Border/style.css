@@ -1,0 +1,128 @@
+/*
+Height
+-------
+
+By default, it sets the content area height of the element.
+
+div {
+        height: 10px;
+    }
+*/
+
+
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+}
+
+
+
+/*
+***If div or element has no content then there will be no height */
+
+
+
+/*
+Width
+-------
+
+By default, it sets the content area width of the element.
+
+div {
+        height: 10px;
+    }
+*/
+
+
+/*
+Border
+------
+Used to set an element's border
+
+    > border-width (thickness of the border)
+    > border-style (different style such as doted, dashed, double line, etc.)
+    > border-color (different color of the border)
+
+
+*/
+
+/* div{
+    border-color: purple;
+    border-width: 5px;
+    border-style: solid;
+} */
+
+h1{
+    border-color: purple;
+    border-width: 5px;
+    border-style: dashed ;
+}
+
+/*
+Border shorthand
+-----------------
+
+width | style | color
+
+div{
+    border: 2px solid purple;
+}
+*/
+
+/* div{
+    /* border-color: purple;
+    border-width: 5px;
+    border-style: solid; */
+
+    /* border: 2px solid purple; 
+}
+    
+*/  
+
+
+/*
+Border sides
+-------------
+To control an individual side of the box
+
+    > border-left
+    > border-right
+    > border-top
+    > border-bottom
+
+*/
+
+div{
+    border-color: aqua;
+    border-style: solid;
+    border-left-style: dashed ;
+    border-left-color: blue;
+    border-width: 5px;
+}
+
+
+/*
+Border radius
+-------------
+Used to round the corners of an element's outer border edge
+
+div {
+        border-radius: 15px;
+    }
+
+to make completely circle(heigth and width should be same)
+
+div {
+        border-radius: 50%;
+    }
+
+individual corners: border-top-right-radius, border-top-left-radius, border-bottom-right-radius, border-bottom-left-radius
+
+
+*/
+
+div{
+    border-radius: 15px;
+    border-top-right-radius: 40px;
+}

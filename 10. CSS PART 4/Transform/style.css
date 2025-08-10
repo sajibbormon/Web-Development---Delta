@@ -1,0 +1,105 @@
+/*
+CSS Transform
+This property lets you rotate, scale, skew, or translate an element.
+
+(i) Rotate (2d, 3d)
+
+transform : rotate (45deg);
+
+we can also use rad or turn instead of deg.
+
+**after applying rotation, it not only transform/rotate the element but also transform/rotate all its contents.
+
+*/
+section{
+    margin-top: 100px;
+}
+
+div{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #7aa874; 
+    margin:10px;
+    transition-duration: 2s;
+
+}
+
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/*transform rotate*/
+
+#one{
+    transform: rotate(45deg);
+}
+
+/*
+Scale Transform (2d, 3d)
+----------------
+
+ii) Scale
+        transform: scale(0.5); //means element will become half of it's original size
+        transform: scale(1.5); //means element will become 1.5 times bigger of it's orignal size
+
+Scaling means, both height and width will scale. (x and y both will increase)
+
+
+We can also scale x and y by giving different size
+        transform: scale(0.5, 1.5); //scale(x,y)
+
+we can also scale only X
+        transform: scaleX(0.5);
+similarly we can scale y
+
+*/
+
+#two{
+    transform: scale(0.5);
+}
+
+
+/*
+Translate 
+---------
+Translate means move element along with x or y axis.
+
+
+iii) Translate(only 2d)
+        transform: translate(50px, 50px);
+        transform: translateX(10px);
+        transform: translateY(10px);
+
+
+*/
+
+#three{
+    /* transform: translate(100px, 100px); */
+    transform: translateX(100px);
+}
+
+/*
+Skew
+------
+
+The skew() function tilts an element on the x-axis or both the x and y axes on a two-dimensional plane.
+
+iv) Skew
+        transform: skew(30deg);
+
+*/
+
+#four{
+    transform: skew(30deg);
+}
+
+
+/*all transform together */
+#five{
+    transform: rotate(30deg) translateX(50px) skew(45deg);
+}

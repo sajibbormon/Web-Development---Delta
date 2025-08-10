@@ -1,0 +1,70 @@
+/* h2{
+    display: inline;
+    background-color: lightgreen;
+}
+
+span{
+    display: block;
+    background-color: lightsalmon;
+}  */
+
+/* --------------------------x------------------------- */
+
+span{
+    border: 2px solid black;
+    height: 100px;
+    width: 250px;
+    padding: 25px;
+    /* Here the padding is getting from left and right sides only.(top and bottom padding, height, width is ignored by browser) */
+}
+
+span{
+    margin: 10px;
+    /* Here the margin is getting from left and right sides only.(top and bottom margin is ignored by browser) */
+
+}
+
+/* ***for inline the padding and margin works for only left and right side, not for top and bottom. And height and width also ignored for inline elements */
+
+div{
+    border: 2px solid black;
+    height: 100px;
+    width: 250px;
+    padding: 25px;
+    margin: 10px;
+}
+
+/* here div is block element, so every property is working for this element */
+
+
+/* note */
+
+
+/* BLOCK
+
+Always start on a new line
+
+Take up as much horizontal space as possible (the
+full width of the container or browser window if
+there is no container)
+
+Will respect width and height CSS properties
+
+Horizontal and vertical margins both work */
+
+
+
+/* 
+INLINE
+
+Do not start on a new line
+
+Only use as much horizontal space as required by
+the content. Do not accept width and height CSS
+properties
+
+Margins will work horizontally, but not vertically
+
+Padding works on all sides, but the top and bottom
+may overlap other elements. 
+*/

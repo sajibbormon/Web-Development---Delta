@@ -1,0 +1,85 @@
+/*
+The position CSS property sets how an element is positioned in a document.
+
+The top, right, bottom, and left properties determine the final location of positioned elements.
+
+
+    · static
+
+    · relative
+
+    · absolute
+
+    · fixed
+
+
+    Positon - Static
+    ----------------
+    The top, right, bottom, left and z-index properties have no effect. 
+    This is the default value. By default if any an element position is not set/given then it is static.
+
+    Position - Relative
+    -------------------
+    the offset is relative to itself based on the values of top, right, bottom, and left.
+
+    Position - Absolute
+    -------------------
+    The element is removed from the normal document flow, and no space is created for the element in the page
+    layout. It is positioned relative to its closest positioned ancestor(which is not static), if any; otherwise, it is placed relative to the initial containing block.
+
+    Absolute means: We consider the position based on total document.
+
+
+    Position - Fixed
+    ----------------
+    The element is removed from the normal document flow, and no space is created for the element in the page layout.
+    It is positioned relative to the initial containing block established by the viewport.
+    for fixed if the position(top, left, right, bottom) is not given then there is will no space for that element.
+
+
+
+
+*/
+
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: lightblue;
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static{
+    background-color: blueviolet;
+    
+    top: 300px;
+    left: 300px;
+}
+
+#relative{
+    /* it takes position(top, left, right, bottom) based on it's own previous position */
+    background-color: lightpink;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute{
+    /* it takes position(top, left, right, bottom) based on the page space/document space */
+    background-color: cadetblue;
+    position: absolute;
+    top: 100px;
+    /* left: 100px; */
+}
+
+#fixed{
+    /*fixed, always in the given position(top, right, left, bottom) even when scrolling and depend on it's parents/grandparents if any position is given to them.*/
+    background-color: lime;
+    position: fixed;
+    top: 50px;
+    left: 1100px;
+
+}

@@ -1,0 +1,43 @@
+/* 
+Grid Template
+-------------
+    They define the lines & track sizing(how much space/area)
+
+        grid-template-rows
+
+        grid-template-columns
+
+        Suppose, need to create three tracks/rows using grid: 
+            grid-template-rows: 100px 100px 100px;
+
+
+        equally divide space for rows or columns:
+            grid-template-columns: auto auto auto;
+
+        equally divides the width into three column. (we generally not use auto, only useable when there is extra space)
+
+        if we remove the height and width of grid items then it will occupy individual cell(completely occupy the whole space).
+
+
+
+
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.item{
+    /* width: 100px;
+    height: 50px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+
+}

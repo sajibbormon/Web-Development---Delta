@@ -1,0 +1,40 @@
+/*
+<div>
+    <p>
+        <ul> </ul>
+    </p>
+</div>
+
+ 
+in css file:
+
+div{
+    color: pink;
+   }
+
+
+Here, the tree is like, div is grandparent, p is parent and ul is child
+
+and coloring only grandparent all other elements are also getting the same color, as they are inherting from their parent.
+
+*/
+
+div{
+    background-color: yellow;
+}
+
+form{
+    background-color: lightcoral;
+}
+
+/* by default input, button, etc. do not inherit from it's parent. */
+
+input{
+    background-color: inherit;
+}
+
+
+/* non-inherit property:
+                        width, height, border,....etc.
+
+*/

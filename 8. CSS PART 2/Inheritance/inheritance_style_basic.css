@@ -1,0 +1,29 @@
+/*
+<div>
+    <p>
+        <ul> </ul>
+    </p>
+</div>
+
+
+in css file:
+
+div{
+    color: pink;
+   }
+
+
+Here, the tree is like, div is grandparent, p is parent and ul is child
+
+and coloring only grandparent all other elements are also getting the same color, as they are inherting from their parent.
+
+*/
+
+/* div{
+    background-color: aquamarine;
+} */
+p{
+    background-color: bisque;
+}
+
+/* after giving background color to p element the should change inside p tag but ul and li takes the background color of div.*/ 

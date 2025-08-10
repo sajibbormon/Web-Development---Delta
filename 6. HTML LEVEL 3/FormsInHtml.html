@@ -1,0 +1,121 @@
+<!-- 
+Forms in HTML
+
+    <form>
+
+        form content
+
+    </form> 
+
+
+
+
+Action Attribute
+
+    Action attribute is used to define what action needs to be performed when a form is submitted
+    or where the form data should be sent
+
+    <form action="/action.php" >
+
+    <form action="/action" >
+
+Form Elements
+--------------
+    Input
+
+    · used to create multiple form controls
+    · there are multiple types of inputs that can be created using type attribute
+
+
+    <input>
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+Forms elements
+----------------
+    Placeholder attributes
+    placeholder attribute generally shows in the input box that what a user have to insert. Value/placeholder text shows before entering any input
+
+    <input type="text" placeholder="Enter> 
+
+
+
+Label
+------
+
+· Label element represents a caption for an item in a user interface
+
+    <label >
+        Enter your username :
+        <input type="text" placeholder="username">
+    </label>
+
+
+Label Classical Approach
+------------------------
+
+
+    <label for="username"> Enter your username : </label>
+
+    <input type="text" id="username" placeholder="username">
+
+    ** for attribute value and id attribute value should be same.
+
+
+    
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <label for="username"> Enter your username: </label>
+            <input type="text" placeholder="username" id="username">
+        
+        <br/>
+        <label> Enter your password:
+            <input type="password" placeholder="password">
+        </label>
+        <br/>
+        <label>Enter number:
+            <input type="number" placeholder="number">
+        </label>
+        <br/>
+        <label >Time: 
+            <input type="time" placeholder="time">
+        </label>
+        
+        <br/>
+        <label>
+            <input type="color" placeholder="color">
+        </label>
+    </form>
+</body>
+</html>

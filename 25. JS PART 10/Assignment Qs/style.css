@@ -1,0 +1,12 @@
+#box{
+    overflow: scroll;
+    height: 200px;
+    width: 200px;
+    border: 1px solid pink;
+    float: left;
+}
+
+#scrollp{
+    height: 400px;
+    width: 400px;
+}

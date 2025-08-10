@@ -1,0 +1,17 @@
+.main{
+    height: 300px;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    align-content: baseline;
+    
+}
+
+div{
+    height: 100px;
+    width: 200px;
+    /* margin-right: 10px; */
+}

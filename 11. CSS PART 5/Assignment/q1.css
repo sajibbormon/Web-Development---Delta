@@ -1,0 +1,21 @@
+.main{
+    height: 400px;
+    width: 400px;
+    border: 2px solid lightseagreen;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    text-align: center;
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

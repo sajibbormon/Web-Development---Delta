@@ -1,0 +1,229 @@
+/*
+
+Universal Selector
+-------------------
+
+To select everything in a document
+
+Universal
+Selector *
+
+    *{
+
+        property: value;
+
+    }
+
+*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*
+Element selector
+----------------
+
+Selects all elements of the same type
+
+ Element selector: h1, h2, p, a, etc.
+
+  h1{
+    property: value;
+    }
+
+ */   
+
+
+
+ h1, h3{
+    color: #b92b27;
+ }
+
+
+ /*
+
+ ID selector
+ -----------
+ Selects an element based on the value of the element's id attribute.
+
+ Id selector: #givenId
+
+
+   #givenId{
+                property: value;
+
+           }
+
+*/
+
+ #login{
+    color: antiquewhite;
+    background-color: rgb(48, 155, 204);
+ }
+
+ #signup{
+    color: beige;
+    background-color: blue;
+ }
+
+
+ /*
+ Class Selector
+ --------------
+
+ Selects an element based on their class attribute.
+
+ We can group multple elements using class.
+
+ class selector: .myclass
+
+
+ .myclass{
+            property: value;
+         }
+
+
+*/
+
+.follow{
+    color:#b92b27;
+}
+
+.upvote{
+    background-color: aqua;
+}
+
+
+/*
+
+Descendant Selector
+-------------------
+
+    grandparent
+        ↓
+      parent
+        ↓
+      child
+
+ child is descendant of parent.
+ parent is descendant of grandparent
+
+ *element inside element
+ *class inside element
+ 
+
+Eg - Selects all paragraphs inside divs
+
+descendant
+Selector
+
+
+this is an example of element inside element
+div p{
+        property: value;
+    }
+
+*/
+
+
+nav a{
+    text-decoration: none;
+    /* background-color: yellow; */
+}
+
+p a{
+    color:purple;
+    text-decoration: none;
+    background-color: yellow;
+}
+
+nav ul li{
+    color: pink;
+}
+nav ul li a{
+    color: #b92b27;
+}
+
+
+/*
+
+Adjacent Sibling Combinator
+---------------------------
+
+Eg- Heading3 that comes immediately after any paragraph
+
+
+p + h3{
+        property: value;
+      }
+
+it will select each h3 element that is exacty after any p element.
+and both of them are in same label. 
+
+example:
+
+<p>   </p>
+<h3>  </h3>
+
+ 
+
+*/
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+}
+
+
+/*
+Child Combinator
+----------------
+
+Eg- Selects all buttons which are direct children of spans
+
+ span > button{
+                property: value;
+              }
+
+
+can only select 1 level down child.
+
+
+*/
+
+div > input{
+    background-color: darkseagreen;
+}
+
+/*
+Attribute Selector
+------------------
+Selects elements based on the presence or value of a given attribute
+
+input[attr="value"]{
+                property: value;
+                   }
+
+
+
+
+
+
+
+
+*/
+input[type="text"]{
+    color: green;
+}
+input[type="password"]{
+    color: red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}

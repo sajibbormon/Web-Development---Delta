@@ -1,0 +1,74 @@
+
+
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+}
+
+
+
+div{
+    border-color: purple;
+    border-style: solid;
+    border-width: 5px;
+}
+
+/*
+Padding
+----------
+ Padding is area/space between border and the content of an element.
+
+    > padding-left
+    > padding-right
+    > padding-top
+    > padding-bottom
+
+    > padding
+
+div{
+        padding-left: 50px;
+    }
+
+*/
+
+div{
+    padding-top: 30px;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 150px;
+}
+
+
+/*
+Padding shorthand
+-----------------
+
+    #1. for all 4 sides
+
+    padding: 50px;
+
+
+    #2. top & bottom | left & right
+
+    padding: 1px 2px;
+
+
+
+    #3. top | left & right | bottom
+
+    padding: 1px 2px 3px;
+
+
+
+        *clockwise
+    #4. top I right | bottom | left
+
+    padding: 1px 2px 3px 4px;
+
+*/

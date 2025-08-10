@@ -1,0 +1,59 @@
+/* 
+CSS Transitions
+---------------
+Transitions enable you to define the transition between two states of an element.
+(the time to change one state to another state)
+
+ eg.: Suppose element shape is square, if the element is hover then it will become circular, but how much time is taken is depend on transition.
+
+ Syntax: 
+    transition: 2s;
+
+or transition-duration: 2s;
+*/
+
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    transition: 2s 1s;  
+}
+
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+} */
+
+/*
+Transition shorthand
+--------------------
+property name | duration | timing-function | delay
+
+syntax: 
+    transition: margin-top 2s ease-in-out .2s;
+
+    transition: 1s 1s; this means change for 1 sec and delay time 1 sec
+
+    same things can be done by
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+*/
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 10px auto;
+    transition: margin-top 2s ease-in 0.2s;
+}
+
+div:hover{
+    margin-top: 400px;
+}
+
+/*In animation and transitions, "ease-in" means starting slowly and
+ accelerating, while "ease-out" means starting fast and decelerating. 
+ "Ease-in-out" combines both, starting slow, speeding up in the middle, and slowing down at the end. */

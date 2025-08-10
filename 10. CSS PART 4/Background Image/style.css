@@ -1,0 +1,27 @@
+/*
+Background Image
+----------------
+Lets you set an image as a background.
+
+Syntax:
+        background-image: url("../somepath/img.jpg");
+        background-size: contain / cover / auto;
+
+contain: It will fully fitted the element.(without any crop or scaling)
+cover: It will fitted the element by cropping the image.
+auto: stretch(both x and y axis)
+
+mostly we use cover
+
+
+*/
+
+div{
+    width: 300px;
+    height: 200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("catbackground.jpg");
+    background-size: cover;
+    color: white;
+}

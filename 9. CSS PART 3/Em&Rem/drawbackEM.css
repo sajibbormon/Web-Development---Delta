@@ -1,0 +1,41 @@
+/* 
+Drawback of EM
+---------------
+
+    Snowball effect in nested elements
+
+*/
+
+div{
+    font-size: 2em;
+ }
+
+ /*to avoid this we use rem*/
+
+ /*
+ Rem (Root Em)
+-------------
+unit                    Relative to
+-------                --------------
+rem                     Font size of the root element.\
+
+*/
+
+div{
+    font-size: 2rem; 
+}
+
+/*
+
+    <section>section
+        <div>div1
+            <div>div2
+                <div>div3</div>
+            </div>
+        </div>
+    </section>
+
+Section is the root. So, font-size will be section font-size*2 for each nested div. REM means root font-size*2 for all nested elements.
+
+
+    */

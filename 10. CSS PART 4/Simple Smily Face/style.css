@@ -1,0 +1,80 @@
+/* .face{
+    height: 300px;
+    width: 300px;
+    border: 2px solid sandybrown;
+    border-radius: 50%;
+    background-color: sandybrown;
+}
+
+.eye1{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 60px;
+    left: 75px;
+}
+
+.eye2{
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 25px;
+    left: 180px;
+}
+
+.mouth{
+    height: 40px;
+    width: 100px;
+    border: 2px solid chocolate;
+    background-color: chocolate;
+    position: relative;
+    top: 100px;
+    left: 95px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+} */
+
+
+/* tutorial solution */
+
+.face{
+    width: 400px;
+    height: 400px;
+    background-color: #ffa511;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px salmon;
+
+}
+
+.mouth{
+    width: 200px;
+    height: 75px;
+    background-color: brown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    top:250px;
+    left: 100px;
+}
+
+.left_eye, .right_eye{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    top:100px;
+}
+
+.right_eye{
+    left: 250px;
+}
+
+

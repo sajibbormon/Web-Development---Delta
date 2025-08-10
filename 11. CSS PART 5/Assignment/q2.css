@@ -1,0 +1,25 @@
+.container{
+    height: 50px;
+    width: 900px;
+    background-color: palevioletred;
+    /* opacity: 40%; */
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+
+div{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    color: black;
+    /* opacity: 100%; */
+    text-align: center;
+    line-height: 50px;
+
+}

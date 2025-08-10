@@ -1,0 +1,50 @@
+/* 
+CSS Grid
+----------
+    Setting a container's display to grid will make all children grid items
+
+        container {
+            display : grid;
+        }
+
+        The container which contain the Grid Items is called Grid container.
+        And Items are called Grid items. (Direct children)
+
+        ***The core difference between CSS Grid and Flexbox lies in their dimensionality: 
+        Flexbox is for one-dimensional layouts (rows or columns), while CSS Grid is for 
+        two-dimensional layouts (rows and columns simultaneously). 
+
+
+        example: 
+
+        <div>
+            <h1> </h1>
+            <div>
+                <h2> </h2>
+            </div>
+        </div>
+
+
+        h1 and div is Grid Item but h2 is not Grid Item bcz not a direct children.
+
+
+
+
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+}
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+
+}

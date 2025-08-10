@@ -1,0 +1,41 @@
+/*
+
+Em
+-----
+Unit                    Relative to
+
+em                      Font size of the parent, in the case of typographical properties like font-size, and
+                        font size of the element itself, in the case of other properties like width, padding, margin.
+
+
+
+
+
+*/
+
+#outer{
+    height: 400px;
+    width: 400px;
+    border: 2px solid bla ck;
+    background-color: pink;
+    font-size: 20px;
+}
+
+#inner{ 
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    font-size: 2em; /*double from the parent's font-size//here it is 20px for outer. After using em, the font-size for inner will be 2*20px = 40px */
+    padding: 1em; /* now the padding will be selected as self font-size*1, which is 40px*1= 40px*/
+}
+
+button{
+    font-size: 50px;
+    border: 2px solid green;
+    margin: 10px;
+    border-radius: 15px;
+    padding-left: 1em; /*this padding will change according to the font size of the button*/
+    padding-right: 1em; /*this padding will change according to the font size of the button*/
+
+}
+

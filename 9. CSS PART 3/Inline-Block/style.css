@@ -1,0 +1,24 @@
+
+
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    /* display: inline; */
+    /* if we use only inline then the browser will ignore top & bottom margin, also height & width property is not working.
+    As a result the background color can't be visible in the browser. In order to visible every property we use inline-block */
+    display: inline-block;
+}
+
+/* inline-block
+  -------------
+  Using inline-block the elements get style as block element but behave like inline element.
+  */
+
+
+  #third{
+    display: none; /*if we want not to shown any element then we can use display: none */
+  }

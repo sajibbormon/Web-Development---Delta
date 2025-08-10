@@ -1,0 +1,26 @@
+/* Q1 */
+#mainTopic{
+    color:blue;
+}
+
+/* Q2 */
+*{
+    text-align: center;
+}
+
+/* Q3 */
+h1, h3, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Q4 */
+.paragraphs{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* Q5 */
+div button{
+    color:azure;
+    background-color: purple;
+}

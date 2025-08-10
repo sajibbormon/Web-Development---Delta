@@ -1,0 +1,219 @@
+/*
+
+What is Flexbox?
+
+Flexible Box Layout
+        It is a one-dimensional layout method for arranging items in rows or columns.
+
+
+        direction = row
+        then the main axis is X(horizontal)
+        and Y axis is cross axis
+
+        direction = col
+        then the main axis is Y(vertical)
+        and X axis is cross axis
+
+
+
+
+Flexbox Direction
+------------------
+
+    It sets how flex items are placed in the flex container, along which axis and direction.
+
+        · flexbox-direction : row; (left to right) (contents/elements are fitted only row wise)
+
+        · flexbox-direction : row-reverse; (right to left) (contents/elements are fitted only row wise)
+
+        · flexbox-direction : column; (top to bottom) (contents/elements are fitted only column wise)
+
+        · flexbox-direction : column-reverse;  (bottom to top) (contents/elements are fitted only column wise)
+
+
+
+Justify Content
+----------------
+    Tells how the browser distributes space between and around content items along the main-axis
+
+        · justify-content : flex-start; (content/element move towards start position, means move to start position)
+
+        · justify-content : flex-end; (content/element move towards end position, means move to end position)
+
+        · justify-content : center; (content/element move towards center position, means move to center)
+
+        · justify-content : space-between; (space between elements- if there is extra space)
+
+        · justify-content : space-around; (space between elements and also space at start and end position, space between element is 2 times than start and end position space- if there is extra space)
+
+        · justify-content : space-evenly; (space between elements and space at start and end position, all spaces are equal- if there is extra space)
+
+
+Flex Wrap
+----------
+    Sets whether flex items are forced onto one line or can wrap onto multiple lines. (When elements are not fitted on single row or column, then it will moved the elements to the next
+    row or column to fit those elements)
+
+        · flex-wrap : nowrap;
+
+        · flex-wrap : wrap;
+
+        · flex-wrap : wrap-reverse; (wrap elements in reverse-direction)
+
+
+Align Items
+-----------
+    Distributes our items along the cross axis
+
+
+        · align-items : flex-start;
+
+        · align-items : flex-end;
+
+        · align-items : center;
+
+
+Feature                         align-items                                     align-content
+------------------------------------------------------------------------------------------------------------------
+Purpose                 Align items within a line                           Align lines within a container
+Scope                   Per line                                            Per container
+Requirement             Can be used with single or multi-line containers    Only works with multi-line containers
+
+
+
+Note:
+align-content has no effect on single-line flex containers (i.e., when flex-wrap: nowrap).
+
+align-items: baseline;
+baseline generally makes text in a same level. content will be levelled based on text alignment.
+
+
+Align Content
+-------------
+    it sets the distribution of space between and around content items along a flexbox's cross-axis
+
+        . align-content : flex-start / flex-end / center
+
+        · align-content : space-between / space-around / evenly
+
+        · align-content : baseline;
+
+
+
+Align Self
+------------
+    Aligns an item along the cross axis.(Individual Item)
+
+        · align-self : flex-start;
+
+        · align-self : flex-end;
+
+        · align-self : center;
+
+        · align-self : baseline;
+
+
+
+
+Flex Sizing
+------------
+    · flex-basis
+
+    It sets the initial main size of a flex item. (for row the main size is width and for column the main size is height)
+
+        flex-basis : 100px; 
+
+
+
+    · flex-grow
+
+        It specifies how much of the flex container's remaining space should be assigned to the
+        flex item's main size
+
+        flex-grow : 1; (by default value is 1)
+
+
+    . min-width
+
+        It assign specific min width.
+
+
+    .max-width
+        It assign spacific max width
+
+
+
+    · flex-shrink
+
+        It sets the flex shrink factor of a flex item.
+
+        flex-shrink : 1
+
+
+
+Flex Shorthand
+--------------
+    
+    · flex-grow | flex-shrink | flex-basis
+
+        flex : 2 2 100px;
+
+
+    · flex-grow | flex-basis
+        
+        flex : 2 100px;
+
+
+    · flex-grow (unitless)
+
+        flex : 2;
+
+        
+    . flex-basis
+
+        flex : 100px;
+*/
+
+
+
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex; 
+    /*by default the direction is row*/
+    flex-direction: row;
+    justify-content:flex-start; /*start and end. And space between.*/
+    flex-wrap:wrap;
+    /*take height 50px(div) to see the difference and try flex-start and flex-end. Top and bottom.*/
+    /* align-items: flex-start;  */
+    /* align-items: baseline; */
+    align-content: flex-start;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#org{
+    align-self: flex-start;
+    /* flex-basis: 50px; */ /*change the flex-direction to column to see the difference*/
+
+    flex-grow: 1; /*it takes all avaliable space. if multiple element is given flex-grow then they will share equal space(for same grow value). */
+
+}
+
+#blue{
+    /* flex-basis: 300px; */
+    flex-grow: 1;
+    min-width: 400px;
+}

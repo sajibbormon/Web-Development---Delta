@@ -1,0 +1,41 @@
+/* 
+Alpha Channel
+-------------
+
+Sets the opacity for a color.(how much color is should be visible)
+Ranges from 0 to 1 in rgb
+0 means hidden, by default it is 1
+Ranges from 00 to ff in #code.
+
+syntax:
+    rgba(255, 255, 255, 0.3)
+
+
+*/
+
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    /*using rgba*/
+    /* background-color: rgba(255, 0, 0, 0.801); */ 
+    /*using #code*/
+    background-color: #aa000011;
+}
+
+/*
+Opacity property
+----------------
+Sets the opacity for the element. (how much the element should be visible)
+Ranges from 0 to 1
+
+0 means hidden, 1 means fully visible
+
+Syntax: 
+    opacity: 0.5;
+
+*/
+
+#opacity{
+    opacity: 0;
+}

@@ -1,0 +1,50 @@
+/* 
+Grid Template
+-------------
+
+    Repeat is used to divide all available space. (generally equally divided)
+
+        grid-template-rows : repeat(count, 1fr)
+
+        grid-template-columns : repeat(count, 1fr)
+
+        grid-template-rows : repeat(2, 1fr)
+
+        grid-template-rows : 1fr 1fr
+
+
+        ***1fr means 1 fraction of 100% width/available space.
+        ***count means how many columns or rows. 
+
+    alternative syntax:
+        grid-template-rows: 1fr 1fr 1fr;
+
+        it will equally divide the width between 3 rows.
+
+
+
+
+
+*/
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px; */
+
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item{
+    /* width: 100px;
+    height: 50px; */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+
+}

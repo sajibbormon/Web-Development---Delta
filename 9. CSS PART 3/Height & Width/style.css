@@ -1,0 +1,36 @@
+/*
+Height
+-------
+
+By default, it sets the content area height of the element.
+
+div {
+        height: 10px;
+    }
+*/
+
+
+div{
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+}
+
+
+
+/*
+***If div or element has no content then there will be no height */
+
+
+
+/*
+Width
+-------
+
+By default, it sets the content area width of the element.
+
+div {
+        height: 10px;
+    }
+*/
+

@@ -1,0 +1,490 @@
+/*
+
+Universal Selector
+-------------------
+
+To select everything in a document
+
+Universal
+Selector *
+
+    *{
+
+        property: value;
+
+    }
+
+*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*
+Element selector
+----------------
+
+Selects all elements of the same type
+
+ Element selector: h1, h2, p, a, etc.
+
+  h1{
+    property: value;
+    }
+
+ */   
+
+
+
+ h1, h3{
+    color: #b92b27;
+ }
+
+
+ /*
+
+ ID selector
+ -----------
+ Selects an element based on the value of the element's id attribute.
+
+ Id selector: #givenId
+
+
+   #givenId{
+                property: value;
+
+           }
+
+*/
+
+ #login{
+    color: antiquewhite;
+    background-color: rgb(48, 155, 204);
+ }
+
+ #signup{
+    color: beige;
+    background-color: blue;
+ }
+
+
+ /*
+ Class Selector
+ --------------
+
+ Selects an element based on their class attribute.
+
+ We can group multple elements using class.
+
+ class selector: .myclass
+
+
+ .myclass{
+            property: value;
+         }
+
+
+*/
+
+.follow{
+    color:#b92b27;
+}
+
+.upvote{
+    background-color: aqua;
+}
+
+
+/*
+
+Descendant Selector
+-------------------
+
+    grandparent
+        ↓
+      parent
+        ↓
+      child
+
+ child is descendant of parent.
+ parent is descendant of grandparent
+
+ *element inside element
+ *class inside element
+ 
+
+Eg - Selects all paragraphs inside divs
+
+descendant
+Selector
+
+
+this is an example of element inside element
+div p{
+        property: value;
+    }
+
+*/
+
+
+nav a{
+    text-decoration: none;
+    /* background-color: yellow; */
+}
+
+p a{
+    color:purple;
+    text-decoration: none;
+    background-color: yellow;
+}
+
+nav ul li{
+    color: pink;
+}
+nav ul li a{
+    color: #b92b27;
+}
+
+
+/*
+
+Adjacent Sibling Combinator
+---------------------------
+
+Eg- Heading3 that comes immediately after any paragraph
+
+
+p + h3{
+        property: value;
+      }
+
+it will select each h3 element that is exacty after any p element.
+and both of them are in same label. 
+
+example:
+
+<p>   </p>
+<h3>  </h3>
+
+ 
+
+*/
+
+p + h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+}
+
+
+/*
+Child Combinator
+----------------
+
+Eg- Selects all buttons which are direct children of spans
+
+ span > button{
+                property: value;
+              }
+
+
+can only select 1 level down child.
+
+
+*/
+
+div > input{
+    background-color: darkseagreen;
+}
+
+/*
+Attribute Selector
+------------------
+Selects elements based on the presence or value of a given attribute
+
+input[attr="value"]{
+                property: value;
+                   }
+
+
+*/
+input[type="text"]{
+    color: green;
+}
+input[type="password"]{
+    color: red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+
+/*
+
+Pseudo Class
+------------
+
+A Keyword added to a selector that specifies a special state of the selected element(s)
+
+    : hover
+
+    : active
+
+    : checked
+
+    : nth-of-type
+
+    : disabled
+
+    : blank
+
+
+*/
+
+/*
+: hover
+----------
+If the cursor is placed at specific element then it will change it's property.
+
+*/
+
+/*
+long in and sign up button is not changing bcz we have selected their property using id
+*/
+
+button:hover{
+    color:black;
+    background-color: white;
+
+}
+
+h3:hover{
+    text-decoration: overline;
+}
+
+/*
+:active
+---------
+
+when a button is clicked or specific property is active then it will change the element's property
+
+*/
+
+button:active{
+    background-color: #b92b27;
+}
+
+p:active{
+    font-weight: bold;
+    color:green
+}
+
+/*
+:checked
+----------
+When a radio button is checked then we can change the property of element
+
+*/
+
+.radiocheck  #yes:checked + label{
+    color: green;
+}
+.radiocheck #no:checked + label{
+    color:red;
+}
+
+/*
+nth-of-type()
+-------------
+
+it can change any specific nth element properties or any nth logical position element such as odd paragraph's background, even paragraph's background etc.
+
+*/
+
+post:nth-of-type(2n){
+    color: black;
+    background-color: #b92b27;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+
+/*
+Pseudo Elements
+-----------------
+A keyword added to a selector that lets you style a specific part of the selected element(s)
+
+::first-letter
+::first-line
+::selection
+::after
+::before
+
+*/
+
+h1::first-letter{
+    color:black;
+}
+
+#paragraphPseudoElm>p::first-line{
+    color: #b92b27;
+}
+
+/*
+::selection
+------------
+
+Selecting a particular element/portion of text with cursor, it will change it's property.
+
+*/
+
+p::selection{
+    background-color: lightblue;
+}
+
+/*
+
+CSS : Cascading StyleSheets
+
+What is cascade in CSS?
+The CSS cascade algorithm's job is to select CSS declarations in order to determine the correct values
+for CSS properties. 
+
+h2 {
+    background-color: yellow;
+   }
+
+
+h2 {
+    background-color: blue;
+   }
+
+final color is blue bcz blue is defined after yellow. So, it changes value based on the last defined property.
+
+** if there is multiple css files, then last files design will be applied. 
+** for same selector.
+
+** if there are different types of selectors then it depends on Specificity
+
+*/
+
+h3{
+    background-color: aqua ;
+}
+
+h3{
+    background-color: lightgreen;
+}
+
+
+/*
+
+
+Selector Specificity
+What is specificity?
+
+Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+
+
+
+
+
+        -----           ------------            --------------
+        id              class,                  element &
+                        attribute &             pesudo-element
+                        pesudo-class
+
+
+
+Suppose only id is given then
+
+         1                  0                       0
+        -----           ------------            --------------
+        id              class,                  element &
+                        attribute &             pesudo-element
+                        pesudo-class
+
+
+    Total score is 100
+
+Suppose id and class is given then
+           1               1                       0  
+        -----           ------------            --------------
+        id              class,                  element &
+                        attribute &             pesudo-element
+                        pesudo-class
+
+    Total score is 110
+
+
+Suppose id, class and pesudo-class is given then
+
+          1                1 + 1 = 2                0 
+        -----           ------------            --------------
+        id              class,                  element &
+                        attribute &             pesudo-element
+                        pesudo-class
+
+    Total score is 120
+
+**More specificity means more priority.
+
+
+
+    What to remember?
+      ***id > class > element
+      ***more selector > less selector
+      ***if specificity same => cascading
+
+*/
+
+/*
+
+Inline Specificity
+------------------
+
+Inline styles are more specific than id
+
+
+                
+    -------           -----          ------------            --------------
+    inline style      id             class,                  element &
+                                     attribute &             pesudo-element
+                                     pesudo-class
+
+    ***Inline styles has the higest priority than css files.
+*/
+
+
+/*
+!important
+------------
+
+!important
+To show the most specific thing in document
+
+h2{
+    background-color: blue !important;
+}
+
+***The highest import priority than any other things in css where !important is written. And it can't be change anymore. More specificity than inline style.
+
+*/
+
+
+h3{
+    background-color: aqua !important;
+}
+
+h3{
+    background-color: lightgreen;
+}
+
+
+
+
+
+

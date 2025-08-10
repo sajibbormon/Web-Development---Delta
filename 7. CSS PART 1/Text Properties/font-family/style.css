@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    font-family: arial;
+
+}
+h3{
+    text-align: start;
+}
+h2{
+    text-align: center;
+    /* font-weight: normal; */
+    font-size: 15px;
+    font-family: Impact;
+}
+p{
+    text-align: justify;
+}
+
+

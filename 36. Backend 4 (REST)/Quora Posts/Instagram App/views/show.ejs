@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 >Welcome <i>@<%= post.username%></i></h1>
+    </div>
+    <hr/>
+    <h3>See your Post in Details</h3>
+    <br>
+    <br>
+    <img src="<%=post.image%>" alt="<%=post.username%>'s image">
+    <br>
+    <br>
+    <p><b>Image URL: </b><%=post.image%></p>
+    <br>
+    <div class="postDesign">
+        <p class="postData"><b>Likes: </b><%=post.likes%></p>
+        <p class="postData"><b>Comments: </b><%=post.comments%></p>
+        <button><a href="http://localhost:8080/posts">HOME</a></button>
+    </div>
+</body>
+</html>

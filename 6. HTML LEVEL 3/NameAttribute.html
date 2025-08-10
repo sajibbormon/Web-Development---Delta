@@ -1,0 +1,37 @@
+<!-- Name Attribute
+
+Name of the form control. Submitted with the form as part of a name/value pair
+
+<input type="text" placeholder="enter name" id="username" name="username"/> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Attribute</title>
+</head>
+<body>
+    <form action="/action">
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </div>
+
+        <div>
+            <label for="password">Enter your password: </label>
+            <input type="password" placeholder="password" id="password" name="password" >
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <form action="https://www.youtube.com/results">
+        <div>
+            <label for="search_in_youtube">Search on Youtube: </label>
+            <input type="text" placeholder="search_in_youtube" id="search_in_youtube" name="search_query">
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>

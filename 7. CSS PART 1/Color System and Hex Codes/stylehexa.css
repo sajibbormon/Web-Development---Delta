@@ -1,0 +1,13 @@
+h1{
+    color: #ffffff; /* short form could be written within 3 characters: #fff*/
+    background-color: #000000;
+}
+h2{
+    color: #0000ff; /* short form of #0000ff is #00f */
+}
+h3{
+    color: #ff00ff;
+}
+h4{
+    color: #a92a3f;
+}
